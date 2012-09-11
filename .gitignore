@@ -11,3 +11,30 @@ Makefile.in
 /depcomp
 /install-sh
 /missing
+
+# from daophot tar ball
+Makefile.linux
+Makefile.mac
+Makefile.unix
+README.txt
+*.f
+*.inc
+*.ps
+*.man
+*.tex
+!daopsf.f
+
+# generated
+Makefile
+*.o
+config.*
+config/*
+src/allframe
+src/allstar
+src/daogrow
+src/daomaster
+src/daomatch
+src/daophot
+src/daopsf
+src/montage2
+stamp*
