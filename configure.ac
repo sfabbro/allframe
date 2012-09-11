@@ -25,7 +25,7 @@ AC_CHECK_LIB([m], [cos])
 
 # Checks for cfitsio libraries
 # TODO: check fortran bindings
-AX_ARG_WITH(fits,
+AC_ARG_WITH(fits,
    AC_HELP_STRING([--without-fits], [disable FITS i/o capabilities]),
    [with_fits=$withval],
    [with_fits=yes])
@@ -39,7 +39,7 @@ fi
 AM_CONDITIONAL([WITH_FITS], [test x$with_fits = xyes])
 
 # Checks for iraf libraried
-AX_ARG_WITH(iraf,
+AC_ARG_WITH(iraf,
    AC_HELP_STRING([--with-iraf], [enable IRAF i/o capabilities]),
    [with_iraf=$withval],
    [with_iraf=no])
