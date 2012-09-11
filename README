@@ -1,0 +1,34 @@
+ALLFRAME
+========
+
+This is a re-packaging of the crowded stellar photometry software DAOPHOT
+and its subsequent ALLSTAR, DAOGROW, DAOMATCH, DAOMASTER and ALLFRAME.
+
+The idea is only to ease distribution and compiling, so the original
+code is left unmodified. So far only one extra executable was added:
+daopsf, to create a FITS image of a Point Spread Function oversampled
+by a factor of 2.
+
+See the INSTALL file for installation.
+
+If you are not familiar with these programs, you are also strongly
+advised to read the following papers:
+
+For DAOPHOT/ALLSTAR:
+
+* DAOPHOT - A computer program for crowded-field stellar photometry
+  Stetson, P.B. 1987
+  http://adsabs.harvard.edu/abs/1987PASP...99..191S
+
+For DAOGROW:
+
+* On the growth-curve method for calibrating stellar photometry with CCDs
+  Stetson, P.B. 1990
+  http://adsabs.harvard.edu/abs/1990PASP..102..932S
+
+For ALLFRAME:
+
+* The center of the core-cusp globular cluster M15: CFHT and HST
+  Observations, ALLFRAME reductions
+  Stetson, P.B. 1994
+  http://adsabs.harvard.edu/abs/1994PASP..106..250S

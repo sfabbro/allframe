@@ -1,0 +1,21 @@
+========================================================================
+ALLFRAME version 4.1.1				    Released: 2011-08-31
+------------------------------------------------------------------------
+
+Added daopsf a utility to convert a DAOPHOT PSF file to a FITS image.
+
+========================================================================
+ALLFRAME version 4.1				    Released: 2011-08-16
+------------------------------------------------------------------------
+
+Update all code with new tar ball from Peter Stetson FTP site. A few fixes
+in the Makefile.am. Added --enable-debug option (only worth g77 to match
+Peter's home cooked makefiles).
+
+========================================================================
+ALLFRAME version 4.0				    Released: 2010-01-10
+------------------------------------------------------------------------
+
+This is the first release of a standard photometry suite of software
+with autotools.
+
