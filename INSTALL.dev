@@ -1,0 +1,11 @@
+To install ALLFRAME from the git repository, you need a daophot4.tar file
+that you have to retrieve from Peter Stetson.
+
+Then, do:
+
+      tar xf file/to/daophot4.tar -C src
+      autoreconf -i
+
+It will create configure and all the necessary Makefile.in
+Finally, create what you want and check the regular INSTALL file.
+
