@@ -33,8 +33,7 @@ allstar_SOURCES = allstar.f allstsubs.f lnxsubs.f iosubs.f \
 	mathsubs.f $(io_source)
 allstar_LDADD = @CFITSIO_LIBS@ @IRAF_LIBS@
 
-allframe_SOURCES = allframe.f fitsubs.f lnxsubs.f iosubs.f \
-	mathsubs.f $(io_source)
+allframe_SOURCES = allframe.f lnxsubs.f iosubs.f mathsubs.f $(io_source)
 allframe_LDADD = @CFITSIO_LIBS@ @IRAF_LIBS@
 
 montage2_SOURCES = montage2.f mathsubs.f iosubs.f lnxsubs.f $(io_source)
@@ -44,7 +43,7 @@ daomaster_SOURCES = daomaster.f iosubs.f mathsubs.f lnxsubs.f dummysm.f
 daomatch_SOURCES = daomatch.f iosubs.f mathsubs.f lnxsubs.f
 daogrow_SOURCES = daogrow.f iosubs.f mathsubs.f lnxsubs.f
 
-EXTRA_DIST = airmass.f bothsubs.f ccdave.f ccdstd.f irasubs.f newtrial.f \
-	redsubs.f unxsubs.f
+doc_DATA = ccdpck.man cook3.1.ps daophotii.ps daophotii.tex README.txt
 
-doc_DATA = cdpck.man cook3.1.ps daophotii.ps daophotii.tex README.txt
+EXTRA_DIST = airmass.f bothsubs.f ccdave.f ccdstd.f irasubs.f newtrial.f \
+	redsubs.f unxsubs.f $(doc_DATA)
