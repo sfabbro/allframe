@@ -1,22 +1,17 @@
 ALLFRAME Installation Instructions
 ==================================
 
-This ALLFRAME packaging follows the standard GNU installation procedure.
-
-You will need the following:
-
-* Sign the DAOPHOT agreement. 
-  If you have not already, you need to email Peter Stetson, and agrees
-  on the DAOPHOT licensing terms. All the files from the tar ball he
-  will send you are included in the src directory and have not been
-  patched.
+In order to install ALLFRAME, you will need the following:
 
 * A FORTRAN 77 compiler: known to work with g77. gfortran-4.4 and above
-  might also. The code is not really portable, so it is not recommended
+  might also. The code is not so portable, so it is not recommended
   with gfortran versions 4.1 and 4.2 (run gfortran --version to
-  check).
+  check). Most likely your distribution supports it.
 
-* The CFITSIO library with fortran bindings. 
+* If you have not done it already, you need to email Peter Stetson,
+  and to agree on the DAOPHOT licensing terms.
+
+* The CFITSIO library with fortran bindings.
   Most likely your distribution supports it. If not, you can fetch the
   latest version of a fully working CFITSIO and execs from:
 
@@ -31,14 +26,16 @@ You will need the following:
    ./configure --enable-fortran FC=g77 F77=g77 FFLAGS="-O2"
 
 
+This ALLFRAME packaging follows the standard GNU installation procedure.
 Once you got CFITSIO and a FORTRAN 77 compiler working, you can build
 ALLPHOT with the following standard commands:
 
    ./configure && make
 
-Just as described for CFITSIO, you can specify your FC,F77 and FFLAGS to suit
-your needs. FFLAGS=-O3 should be plenty optimizations. FFLAGS=-O2 might be
-more stable and only slightly slower, depending on your compiler.
+Just as described for CFITSIO, you can specify the variables FC, F77
+and FFLAGS to suit your needs. FFLAGS=-O3 should be plenty
+optimizations. FFLAGS=-O2 might be more stable and only slightly
+slower, depending on your compiler.
 
 Then install it with:
 

@@ -8,4 +8,5 @@ Then, to create the final tarball do:
       ./configure
       make distcheck
 
-See the INSTALL file for more
+See the INSTALL file for more on how to install the finalized full
+allframe-4.x.x.tar.gz produced tar ball.

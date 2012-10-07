@@ -38,7 +38,7 @@ if test x"$with_fits" = x"yes"; then
 fi
 AM_CONDITIONAL([WITH_FITS], [test x$with_fits = xyes])
 
-# Checks for iraf libraried
+# Checks for iraf libraries
 AC_ARG_WITH(iraf,
    AC_HELP_STRING([--with-iraf], [enable IRAF i/o capabilities]),
    [with_iraf=$withval],
