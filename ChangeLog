@@ -2,8 +2,9 @@
 
 	* Version bumped to 4.1.2
 	* Switch to newer autoconf/automake
-	* Add IRAF i/o
-	* Repackage and publish to github
+	* Updated m4 macro for cfitsio
+	* Add IRAF i/o (need more testing)
+	* Repackage and publish to github all the extra stuff
 
 2011-08-31  Sebastien Fabbro  <sfabbro@uvic.ca>
 

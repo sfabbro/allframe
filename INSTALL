@@ -12,8 +12,8 @@ In order to install ALLFRAME, you will need the following:
   and to agree on the DAOPHOT licensing terms.
 
 * The CFITSIO library with fortran bindings.
-  Most likely your distribution supports it. If not, you can fetch the
-  latest version of a fully working CFITSIO and execs from:
+  Most likely your distribution supports it (libcfitsio-dev on some distro). 
+  If not, you can fetch the latest version of a fully working CFITSIO and execs from:
 
   http://dev.gentoo.org/~bicatali/distfiles/
 
