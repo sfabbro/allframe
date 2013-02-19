@@ -5,11 +5,19 @@ This is a re-packaging of the crowded stellar photometry software DAOPHOT
 and its subsequent ALLSTAR, DAOGROW, DAOMATCH, DAOMASTER and ALLFRAME.
 
 The idea is only to ease distribution and compiling, so the original
-code is left unmodified. So far only one extra executable was added:
+source code is left unmodified. Oonly one extra executable was added:
 daopsf, to create a FITS image of a Point Spread Function oversampled
 by a factor of 2.
 
-See the INSTALL file for installation.
+See the INSTALL file for installation. Although the packaging code is
+open source, the original DAOPHOT/ALLFRAME FORTRAN code is
+unfortunately not.
+
+If you are reading this README file from the github web site, you
+will need to get the allframe source code. You will need to contact
+the main DAOPHOT author to sign the DAOPHOT agreement and email the
+author of this github repository to get a copy of the signed agreement
+to get the fully packaged tar ball.
 
 If you are not familiar with these programs, you are also strongly
 advised to read the following papers:

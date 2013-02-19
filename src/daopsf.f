@@ -16,17 +16,17 @@
       REAL PSFROW(MAXROW), USEPSF
       CHARACTER PSFFILE*256, FITSFILE*260, SWITCH*260
       CHARACTER ARGV*32, C
-      CHARACTER USAGE(NOPT+3)*80
+      CHARACTER USAGE(NOPT+3)*200
       CHARACTER ERRMSG*80, ERRTXT*30
 
       DATA USAGE/ 'Usage: daopsf [OPTIONS] <file>',
-     .     'Write a FITS image of a DAOPHOT PSF <file>',
+     .     'Write a FITS image of a PSF using a DAOPHOT PSF <file>',
      .     'OPTIONS:',
      .     '  -o=<file>: output (default: <file>.psf.fits)',
      .     '  -s=<n>   : size of image (default: psf radius)',
-     .     '  -x=<n>   : x position of PSF (default: from file)',
-     .     '  -y=<n>   : y position of PSF (default: from file)',
-     .     '  -m=<n>   : magnitude of PSF (default:  1)'/
+     .     '  -x=<n>   : x position in image (default: center)',
+     .     '  -y=<n>   : y position in image (default: center)',
+     .     '  -m=<n>   : magnitude of PSF (default: scale=1)'/
 C
 C     Parse command line arguments
 C

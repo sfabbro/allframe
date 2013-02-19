@@ -1,4 +1,3 @@
-Main FORTRAN code: Peter Stetson
+Peter Stetson <pbs@nrc.dao.ca>: Main FORTRAN code
 
-Autotools packaging: Sébastien Fabbro <sfabbro@uvic.ca>
-
+Sébastien Fabbro <sfabbro@uvic.ca>: autotools packaging and daopsf.f

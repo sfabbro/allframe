@@ -1,17 +1,17 @@
-2012-09-11  Sebastien Fabbro  <sfabbro@uvic.ca>
+2012-09-11  Sebastien Fabbro <sfabbro@uvic.ca>
 
 	* Version bumped to 4.1.2
 	* Switch to newer autoconf/automake
 	* Add IRAF i/o
 	* Repackage and publish to github
 
-2011-08-31  Sebastien Fabbro  <sfabbro@uvic.ca>
+2011-08-31  Sebastien Fabbro <sfabbro@uvic.ca>
 
 	* Version bumped to 4.1.1
 	* Added daopsf.f, a new utility to convert a DAOPHOT PSF file to a
 	FITS image file.
 
-2011-08-16  Sebastien Fabbro  <sfabbro@uvic.ca>
+2011-08-16  Sebastien Fabbro <sfabbro@uvic.ca>
 
 	* Version bumped to 4.1
 	* Added a hook for some extra flags with g77 compiler in configure.ac
@@ -20,6 +20,6 @@
 	* src/Makefile.am now distributes unused but potentially useful .f files
         * Updated all fortran files from new tar ball on PBS ftp site
 
-2010-01-04  Sebastien Fabbro  <sfabbro@uvic.ca>
+2010-01-04  Sebastien Fabbro <sfabbro@uvic.ca>
 
         * Initial release.

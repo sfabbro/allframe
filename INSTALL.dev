@@ -3,9 +3,9 @@ that you have to retrieve from Peter Stetson.
 
 Then, to create the final tarball do:
 
-      tar xf file/to/daophot4.tar -C src
+      tar xf path/to/daophot4.tar -C src
       autoreconf -i
       ./configure
       make distcheck
 
-See the INSTALL file for more
+See the INSTALL file for more information.
