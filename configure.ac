@@ -1,4 +1,4 @@
-AC_INIT([allframe], [4.1.2], [pbs@nrc.dao.ca])
+AC_INIT([allframe], [4.1.2], [sfabbro@uvic.ca])
 
 AC_CONFIG_SRCDIR([src/daophot.f])
 AC_CONFIG_HEADERS([config.h])
@@ -9,7 +9,7 @@ AM_INIT_AUTOMAKE([foreign])
 
 AC_PROG_F77
 AC_ARG_ENABLE(debug,
-   AC_HELP_STRING([--enable-debug], [enable memory debug mode (default=no)]),
+   AS_HELP_STRING([--enable-debug],[enable memory debug mode (default=no)]),
    [enable_debug=$enableval],
    [enable_debug=no])
 if test x"$enable_debug" = x"yes"; then
@@ -26,28 +26,31 @@ AC_CHECK_LIB([m], [cos])
 # Checks for cfitsio libraries
 # TODO: check fortran bindings
 AC_ARG_WITH(fits,
-   AC_HELP_STRING([--without-fits], [disable FITS i/o capabilities]),
+   AS_HELP_STRING([--without-fits],[disable FITS i/o capabilities]),
    [with_fits=$withval],
    [with_fits=yes])
 if test x"$with_fits" = x"yes"; then
-  AX_CHECK_PKG_LIB(
+  AX_PKG_LIB(
   	[cfitsio],
 	[fitsio.h],
-	[ffopen],,
-	[AC_MSG_ERROR([Could not find cfitsio library])])
+	[cfitsio],
+	[ffopen],
+	[],
+	[AC_MSG_ERROR([Could not find cfitsio library with fortran bindings])])
 fi
 AM_CONDITIONAL([WITH_FITS], [test x$with_fits = xyes])
 
 # Checks for iraf libraries
 AC_ARG_WITH(iraf,
-   AC_HELP_STRING([--with-iraf], [enable IRAF i/o capabilities]),
+   AS_HELP_STRING([--with-iraf],[enable IRAF i/o capabilities]),
    [with_iraf=$withval],
    [with_iraf=no])
 if test x"$with_iraf" != x"no"; then
-  AX_CHECK_PKG_LIB(
+  AX_PKG_LIB(
   	[iraf],
 	[],
-	[ftppre],,
+	[ftppre],
+	[],
 	[AC_MSG_ERROR([Could not find iraf library])])
 fi
 AM_CONDITIONAL([WITH_IRAF], [test x$with_iraf = xyes])
